@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<id>"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '<id>');</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 2.2">
+
+    <!-- Primary Meta Tags -->
+    <title>Cubics Blockchain</title>
+    <meta name="title" content="Cubics Blockchain">
+    <meta name="description" content="A Serverless Blockchain for Metaverse, Gaming, and NFT applications" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.cubics.com/blockchain/overview/">
+    <meta property="og:title" content="Cubics Blockchain">
+    <meta property="og:description" content="A Serverless Blockchain for Metaverse, Gaming, and NFT applications">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.cubics.com/blockchain/overview/">
+    <meta property="twitter:title" content="Cubics Blockchain">
+    <meta property="twitter:description" content="A Serverless Blockchain for Metaverse, Gaming, and NFT applications">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/static/logo.png" rel="icon" />
+    <link href="/resources/css/retype.css?v=2.2.706143029004" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.706143029004" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.706143029004" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="/static/dark.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="/static/dark.png">
+                            </span>
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Cubics</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="md:mr-6">
+                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://cubics.com">Website</a>
+                            </li>
+                            <li class="md:mr-6">
+                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://twitter.com/CubicsOfficial">Twitter</a>
+                            </li>
+                            <li class="md:mr-6">
+                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://t.me/CubicsOfficial">Telegram</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://cubics.com">Website</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://twitter.com/CubicsOfficial">Twitter</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://t.me/CubicsOfficial">Telegram</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="grow min-w-0 px-6 md:px-16">
+                        <main class="relative pt-6 pb-16">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="cubics-blockchain" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cubics-blockchain">#</doc-anchor-trigger>
+        <span>Cubics Blockchain</span>
+    </h1>
+</doc-anchor-target>
+<p><strong>A Serverless Blockchain for Metaverse, Gaming, and NFT applications</strong></p>
+<p>Cubics is a serverless layer-1 blockchain that provides infinite scalability, high throughput, sub-second confirmation times, and fees at a tenth of a cent. Cubics achieves this by leveraging serverless compute and storage cloud services while innovating incentive structures and extending the Byzantine Fault Tolerance consensus mechanism for scalability.</p>
+<p><strong>Introduction</strong></p>
+<p>We have witnessed a rapid increase in Metaverse, Gaming, and NFT adoption during the recent year. The increased demand brought infrastructural challenges, considering these applications&#x27; throughput, fee, and latency requirements. Current solutions such as Bitcoin, Ethereum, and more recently, Binance Smart Chain have shown to be not viable enough as long-term candidates for these rapidly expanding industries: the transaction confirmation times are too slow, and the fees are too high. These issues originate from the inherently nonoptimal economic incentives layer, which is the most challenging part of adjusting once implemented. Misalignments in incentives are precisely why Bitcoin, Ethereum, or BSC nodes are not willing to charge lower fees or process transactions faster.</p>
+<p>Cubics is a lightweight and serverless solution that solves the incentive problems by incentivizing validators to compete for speed and fees. Cubics builds on top of available serverless infrastructure services offered by all major cloud providers, leveraging the simplicity, predictability, and (theoretically) infinite scalability of storage and compute. Rather than spending significant portions of time, focus, and development resources on innovating distributed compute and storage, Cubics wants to build upon proven serverless offerings from major cloud providers and decide to focus on what matters most to Cubics&#x27;s mission: the advancement of Metaverse, Gaming and NFT adoption at the interface level, with the goal to onboard 100 million users.</p>
+<p>To do that, Cubics provides a lightweight but highly scalable blockchain with native pre-written and extensively tested &quot;programs&quot; that asset-pools can use. These programs currently include ten common decentralized finance and gaming functionalities such as auctions, fee delegation, launch pads/fundraising, locking/vesting, loot boxes/drop zones, lottery/airdrops, royalty/assets with native yield, staking, swapping/decentralized trading, and voting.</p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<p><strong>Serverless Architecture</strong></p>
+<p>We propose a new serverless blockchain architecture that focuses on user benefits such as fast transaction confirmation times, low fees (around $0.001), and theoretically infinite data scalability for the demands of Gaming, Metaverse, and Web 3.0 applications (easily in the TB/PB range) by leveraging serverless cloud services.</p>
+<p>Cubics&#x27;s node software can be executed on any machine in theory. However, we see an enormous opportunity in serverless offerings by major cloud providers, which allows tapping into proven, stable, and theoretically infinitely scalable compute and storage services while providing the most demanded benefits to end-users (fast confirmation times, low fees, and integrity/verifiability of transactions).</p>
+<p>Serverless technologies by common cloud platforms such as AWS, Azure, GCP, Alibaba Cloud were early in 2019/2020. Today, however, we can label these as fully mature and production-grade choices. Furthermore, many content delivery networks such as Cloudflare and Fastly also provide edge-compute capabilities, which have improved to the point of supporting the demands of high-throughput financial transfers.</p>
+<p>The level of maturity, the ease of access/setup, and linear cost models are reasons for Cubics to focus exclusively on the serverless stack through offerings by the cloud platforms mentioned above.</p>
+<p>For compute functionality, this encompasses building on AWS Lambda, Azure Functions, Google Cloud Functions, Alibaba Function Compute, Cloudflare Workers, and Fastly <a href="mailto:Compute@Edge">Compute@Edge</a>. Storage leverages Amazon Quantum Ledger DB, Amazon DynamoDB, Azure CosmosDB, Google Firestore, Alibaba Tablestore, and Cloudflare Workers KV.</p>
+<p>Cubics aims to eventually allow anyone to run confirmation nodes in just two steps, 1. by providing programmatic API keys from either of these platforms and 2. to subscribe to the transactions mempool (a high throughput topic service responsible for ordering and broadcasting transactions). Hence, we hope to democratize opportunities to run nodes, to provide work for the Cubics network while getting compensated in a way that makes sense economically for individual entities.</p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<p><strong>Scalability</strong></p>
+<p>Serverless infrastructure can scale depending on the limits of underlying technologies as offered by cloud providers. In Cubics&#x27;s case, we reached a peak of 80k TPS with our current setup. The storage and compute capabilities are theoretically limitless (practically, limited to node providers&#x27; account limits or global limits enforced by cloud providers due to hardware constraints).</p>
+<p>Most serverless compute offerings can support hundreds of thousands of invocations per second, while storage offerings can store trillions of records at a petabyte-scale. To participate in the validation of transactions on Cubics, one only requires to know about the last confirmed transaction affecting the form/to balance, which means that the minimum requirement for joining as a node is extremely low (there is no need to store the entire ledger nor to keep the state of all balances).</p>
+<p><strong>Cubics Benefits</strong></p>
+<ul>
+<li><p>Sub-second confirmation times for transactions</p>
+</li>
+<li><p>Minimal fees (approx. $0.001 per transaction for simple transfers)</p>
+</li>
+<li><p>Infinite scalability and storage (with linear cost)</p>
+</li>
+<li><p>An adjusted Byzantine Fault Tolerance consensus mechanism</p>
+</li>
+<li><p>Proof of Audit mechanism for integrity and verifiability of transactions</p>
+</li>
+<li><p>Fee delegation (owners can choose to pay for fees for users&#x27; transactions)</p>
+</li>
+<li><p>Pools &amp; programs tailored and optimized for Gaming/Metaverse/Web 3.0 use-cases</p>
+</li>
+<li><p>Native read-only interfaces (APIs, frontends) for clients</p>
+</li>
+</ul>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<doc-anchor-target id="permissionless-validation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#permissionless-validation">#</doc-anchor-trigger>
+        <span>Permissionless Validation</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Proof of Audit</strong></p>
+<p>&quot;It is possible to verify payments without running a full network node.&quot; Cubics allows any client/node to validate transactions and balances (states) at any given time. With each transaction, Cubics nodes broadcast the resulting state (new to and from balances), representing their vote about the outcome.</p>
+<p>The updated state offers clients a running balance which provides an easy way to audit transaction histories without knowing about all prior transactions or global balance states. If clients don&#x27;t trust publishing nodes with transactions (or need to perform audits for their own reasons), they can openly confirm balances as many steps back as they require based on their desired confidence level.</p>
+<p>The simplest audit that a client can perform is requesting the two prior transactions affecting from/to addresses of the transaction to be verified. Clients can confirm that a certain &quot;UTXO&quot; existed and was correctly reflected by the new transaction. This functionality can be performed through a public API and interface provided by Cubics read-only nodes so that anyone can participate and make use of this validation methodology when desired.</p>
+<p><strong>Blockless Ledger</strong></p>
+<p>Cubics nodes validate and process every transaction individually, rather than agreeing on the validity of a group of transactions within a block. In practice, this means Cubics is blockless or that every transaction can be treated as a block of one. This allows Cubics to produce a continuous data structure of transactions (public ledger) and states (public balances). The benefit for applications is the easy access of transaction history and state of balances at any given point in time while being able to verify the integrity of each transaction (proof of audit).</p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<doc-anchor-target id="cubics-consensus">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cubics-consensus">#</doc-anchor-trigger>
+        <span>Cubics Consensus</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Cubics Byzantine Fault Tolerance</strong></p>
+<p>Cubics builds on top of the original BFT mechanism proposed by Lamport, Shostak, and Pease and the Practical Byzantine Fault Tolerance (PBFT) approach proposed by Castro and Liskov. We propose a modified mechanism following four progressive rounds for every transaction: proposal, voting, quorum, synchronization.</p>
+<p><strong>1. Proposal</strong></p>
+<p>Any node automatically becomes a leader if it submits the first confirmation for a transaction (resulting balances and reflected state). N Nodes propose their solution to the coordinator client, which registers the first confirming node as leader/authority for the transaction to be confirmed.</p>
+<p><strong>2. Voting</strong></p>
+<p>All subsequent votes (within the acceptable voting window of 1500ms after the transaction has been broadcasted) confirm the leader&#x27;s vote or object in case their proposed state differs from the leaders&#x27; solution. Once confirmations of all participating nodes arrive or the window of 1500ms expires, the voting is considered complete.</p>
+<p><strong>3.1 Quorum (total agreement)</strong></p>
+<p>Usually, transactions are confirmed without conflicts, meaning all nodes confirm the same states as the leader node. In this case, the transaction fee is distributed to all participating nodes. The leader receives at least 10%, while all other nodes share the fee reminder proportionally.</p>
+<p><strong>3.2 Quorum (partial agreement)</strong></p>
+<p>A transaction is also considered confirmed if the weight of confirmations vs. objections is at least 4/5. The weight of each vote is a function of the staked amount by voting nodes multiplied by a factor for length of operation. The node(s) who objected (with &lt;1/5 weight) are deducted a penalty of 0.1-Objection Weight/500 of their staked amount, which is distributed at synchronization step among the then-majority.</p>
+<p><strong>3.3 Quorum (non-agreement)</strong></p>
+<p>If a vote does not reach 4/5 voting weight, it is considered unconfirmed and is rebroadcasted by the coordinator node so that all nodes can resubmit their votes. The same penalty of 0.1-Objection Weight/500 is applied on every round of rebroadcasting to all nodes who object until an agreement (4/5 majority) is reached. Voting nodes can decide to change their initial vote or drop out (by themselves or when staking requirements fall below minimum).</p>
+<p><strong>4. Synchronization</strong></p>
+<p>After a transaction has been confirmed, it is pushed to all nodes, which might update their ledgers based on the outcome (if they have not voted correctly already, or if they are nodes interested in the partition range of the transaction). If a transaction has amassed a penalty balance (due to objecting nodes), it is distributed to the majority (which could flip during voting/rebroadcasting, so penalties are not distributed at every voting round but only after final confirmation).</p>
+<p><strong>Validator Staking Requirements</strong></p>
+<p>Nodes who want to participate in the confirmation of transactions have to stake at least 1,000,000 CUBIC. Our current fee structure allows approximately 50 nodes to participate economically while financing the underlying infrastructure and making a profit.</p>
+<p><strong>Cubics BFT Conclusion</strong></p>
+<p>Cubics BFT incentivizes high throughput, low latency, and energy efficiency (unlike PoW mechanisms). Additionally, it guarantees the finality of transactions after the self-imposed maximum confirmation window of 1500ms closes. Lastly, this mechanism ensures that the network functions under a certain amount of faulty nodes (whether unintentionally by being out of sync with the current state or by their intention to harm the network).</p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<doc-anchor-target id="mempool--nodes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mempool--nodes">#</doc-anchor-trigger>
+        <span>Mempool &amp; Nodes</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Cubics Mempool</strong></p>
+<p>Double spending is the biggest problem for distributed networks like Bitcoin or Ethereum. A &quot;double spend&quot; occurs when transactions arrive in different orders on different nodes. Think about a transaction, sending 10 CUBIC from wallet A to B, and another transaction sending 10 CUBIC from wallet A to C. Assuming wallet A has only 10 CUBIC, one of these two transactions must fail by default. However, hypothetically, if both transactions are submitted to different nodes in different orders, a double spend occurs (assuming nodes don&#x27;t coordinate between each other - which is precisely what consensus mechanisms are designed to do).</p>
+<p>The Cubics Mempool is a global pub/sub system for all incoming transactions and is responsible for broadcasting these transactions to all subscribing pools. It provides an agreed-upon ordering for messages, which solves the double-spending problem. Additionally, the Cubics Mempool involves multiple fallback mechanisms to avoid a single point of failure.</p>
+<p>The current limitations of our implementation are 80k TPS and that no prioritization of transactions is possible. Additionally, transactions cannot be reshuffled or moved ahead by paying a higher fee. These attributes are intentionally waived in favor of efficient one-way sorting with higher throughput.</p>
+<p><strong>TLDR</strong>: The Cubics Mempool is a high throughput pub/sub mechanism that ensures the sorting of transactions by order of arrival and broadcasts them to subscribing nodes that process transactions, vote on transaction outcomes, synchronize their state-ledgers, and submit confirmations.</p>
+<p><strong>Mempool Subscribers</strong></p>
+<p>The Cubics Mempool receives all incoming transactions and broadcasts them to subscribing nodes. Nodes can listen selectively based on their requirements and preferences (e.g., nodes might want to listen only to transactions with from-address ranges 1-9a-z and to-address ranges from A-Z). This is a purely illustrative example based on the base58 encoding range of addresses.</p>
+<p>Nodes subscribe to the Mempool, which broadcasts all incoming transactions sequentially ordered by received-at-timestamp. Messages trigger serverless compute functions, which execute modules and programs (either simple transfer, or pre-programmed functions like auctions, staking, swapping, voting, etc.) and update states of balances. Once nodes complete the computation and state reflection internally, they broadcast the result to the coordinator node and are rewarded a portion of the transaction fee upon success.</p>
+<p><strong>Node Synchronization</strong></p>
+<p>Nodes subscribe to the Cubics Mempool to receive incoming transactions and update them locally. Depending on different node types (read-only API node or confirmation node), nodes can participate in receiving all transactions or listen selectively and filter for specific segments. Nodes keep a local ledger and submit confirmations to balance updates they believe are correct (to participate in the transaction fee payout).</p>
+<p>Additionally, nodes consume confirmed transactions, which allows them to update the resulting to &amp; from states locally without having kept a prior ledger. Nodes keep track of transactions internally via an incrementing number, allowing them to stay in sync and detect missed transactions. In the case of discrepancies between a local index and the one of a last broadcasted transaction, nodes can resync and replay transactions they have missed.</p>
+<p><strong>TLDR:</strong> Cubics provides a single data structure of all records, including all states over time. This allows nodes to sync and validate the integrity of transactions at any point in time without knowledge about prior transactions or the state of balances.</p>
+<p><strong>Node Types</strong></p>
+<p>Cubics has four node types: coordinator nodes, validator nodes, storage nodes, audit nodes.</p>
+<p>Coordinator nodes are mediators over the voting process, which receive votes from validator nodes and submit confirmations/rebroadcast transactions, dependent on different quorum outcomes. Every validator node can become a coordinator node if agreed upon by 4/5th of the majority.</p>
+<p>Validator nodes subscribe to transactions and store a subset of transactions (depending on their preferences or limitations, e.g., different infrastructure limits imposed by certain cloud providers). Validator nodes then execute the transaction instructions and programs, reflect state locally, and submit the reflected state as their vote. The reward for validator nodes is either 0.9/(N-1)*fee if they confirm the authority/leader node or 10% if they are the first submitting node.</p>
+<p>Storage nodes subscribe to all transactions and store them on serverless storage offerings for hypothetically infinite scalability. Storage nodes provide clients with the ability to access historical balances/transactions.</p>
+<p>Audit nodes perform audits of transactions and balances by requesting historical data from storage nodes and confirming balances. Audits can be performed as many transactions back as necessary and required by applications (up to the genesis transaction of each asset). Clients can perform audits in their browsers by requesting the required data from storage nodes.</p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<doc-anchor-target id="risks--attack-vectors">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#risks--attack-vectors">#</doc-anchor-trigger>
+        <span>Risks &amp; Attack Vectors</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>51% Attack</strong></p>
+<p>Attackers are guaranteed to be penalized a portion of their stake with every false vote they submit as confirmation. Confirming nodes have a staked amount (minimum 1,000,000 CUBIC) which is weighted by their length of operation. The network is secure as long as honest nodes control the majority of the total voting stake.</p>
+<p><strong>Sybil Attack</strong></p>
+<p>Voting weight is calculated based on the staked amount and adjusted by a factor for the length of operation. The length of operation serves as a form of reputation which is impossible to fake. Cubics accounts for vote weight rather than vote counts. Hence, the number of nodes and whether owned by the same entity or different entities do not matter.</p>
+<p><strong>Spam Attack</strong></p>
+<p>Attackers could spam the network with valid or invalid transactions, affecting bandwidth (best case) or bandwidth and compute resources of nodes. The Cubics Mempool runs sophisticated load balancing and protection software to ensure maximal throughput of honest transactions while throttling bad actors (or clients sending transactions with false markup leading to frequent invalid transactions).</p>
+<p><strong>Free-Riding</strong></p>
+<p>Transaction states are broadcasted only after the confirmation is closed and finalized. Therefore nodes can not rebroadcast existing confirmations to collect fees without providing work.</p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<doc-anchor-target id="economics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#economics">#</doc-anchor-trigger>
+        <span>Economics</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Fee Incentives</strong></p>
+<p>All confirming nodes receive portions of the transaction fee for every successfully confirmed transaction. The leader (proposer of a transaction) is rewarded 10%, and all other nodes are rewarded 0.9/(N-1). A certain number N exists, which is the number of nodes at which the current static transaction fees provide economic reasons to operate a node. This number is approximately 50. Hence up to 50 nodes could participate economically in the voting process of each transaction.</p>
+<p>The authority/leader node (first node to confirm a transaction and propose the resulting state) receives at least 10% or 0.9/(N-1)*fee, whichever is larger. This simple but effective fee structure allows incentivization that is meaningful to the user by fostering competition between nodes (speed of confirmation, the truthfulness of confirmations).</p>
+<p>The proposed reward mechanism solves the collective action problems of currently popular networks, mainly the free-rider problem, which originates from misaligned incentives between nodes and clients. Ethereum incentivization discourages providing infrastructure, hence such a dependence on the heavily subsidized and non-economic Infura. Bitcoin discourages confirmation speed and low fees since volunteers are paying for the network infrastructure.</p>
+<p><strong>TLDR: Cubics&#x27;s fee structure incentivizes nodes to behave truthfully while contributing efficient infrastructure to the network. This solves collective action problems as experienced by Bitcoin and Ethereum.</strong></p>
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+<doc-anchor-target id="pools--programs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pools--programs">#</doc-anchor-trigger>
+        <span>Pools &amp; Programs</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Programs replacing EVM</strong></p>
+<p>Cubics prioritizes client benefits (most notably confirmation speed and low fees) rather than providing a virtualized compute platform that executes bytecode. Cubics covers major use-case programs such as locking, staking, trading, voting, etc., which find importance in applications for Metaverse, Gaming, and NFTs.</p>
+<p>Focusing on a few programs rather than providing full EVM capabilities results in faster development and easier testing. Cubics provides a limited number of pre-written programs to creators who are building on top of Cubics. Creators often are not familiar with languages like Solidity and would rather spend time implementing features than writing and testing the underlying smart contracts.</p>
+<p>Lastly, each of Cubics&#x27;s pre-written programs goes through extensive testing and becomes more trustworthy with every transaction processed. This is the opposite of Ethereum/BSC, where every smart contract has to be audited with each new deployment due to the possibility of change or error.</p>
+<p>TLDR: Cubics provides native programs instead of EVM functionality to improve development speed, guarantee ease of access to creators/users, and ultimately, focus on what matters most to Cubics&#x27;s mission: the adoption of Metaverse/Gaming/NFT applications.</p>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Cubics Docs</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/blockchain/network/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Cubics Network</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2022. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Cubics Blockchain", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>
