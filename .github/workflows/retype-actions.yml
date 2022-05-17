@@ -5,6 +5,12 @@ on:
     branches:
       - master
 
+permissions:
+  actions: write
+  contents: write
+  deployments: write
+  pull-requests: write
+
 jobs:
   publish:
     name: Publish to retype branch
@@ -13,9 +19,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
         with:
@@ -23,4 +26,6 @@ jobs:
 
       - uses: retypeapp/action-github-pages@latest
         with:
+          branch: retype
           update-branch: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
