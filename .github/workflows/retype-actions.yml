@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - master
-  
-permissions:
-  actions: write-all
-  checks: write-all
-  contents: write-all
 
 jobs:
   publish:
