@@ -1,0 +1,21 @@
+input: .
+output: .retype
+url: https://docs.cubics.com
+branding:
+  title: Cubics
+  label: Docs
+  logo: static/dark.png
+favicon: static/logo.png
+poweredByRetype: false
+links:
+- text: Website
+  link: https://cubics.com
+- text: Twitter
+  link: https://twitter.com/CubicsOfficial
+- text: Telegram
+  link: https://t.me/CubicsOfficial
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+integrations:
+  googleAnalytics:
+    id: <id>

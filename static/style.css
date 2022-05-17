@@ -1,0 +1,21 @@
+:root > * {
+    --md-primary-fg-color:        #5500CC;
+    --md-primary-fg-color--light: #5500CC;
+    --md-primary-fg-color--dark:  #5500CC;
+}
+
+.md-container, .md-footer {
+    background: #000;
+}
+
+.md-footer-meta {
+    background: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+}
+
+.md-nav__title {
+    display: none;
+}

@@ -1,0 +1,12 @@
+# Mint a FT
+
+## Video
+Fungible tokens represent divisible shares of a project. They can be traded, and owned by multiple people at once, as opposed to an NFT. To create a fungible token, open the Cubics network app and connect your wallet. Once you click on your wallet, you will be able to select “new token” under wallet actions and enter your token details.
+
+For a fungible token, you have to specify the name, the symbol which represents the ticker of your token, a preview that is the token icon as well as a supply amount. The supply is the total number of tokens that will be minted and sent to your address. Optionally, you can specify a reserve amount, which is an unminted supply that can be created at a later point in time.
+
+Finally, there are optional fields that you might want to fill out. The description field enables you to specify a 256 character description. Links provide you with the option to enter social media accounts or other important resources related to your project. The meta field supports adding custom metadata through a JSON object. The object field and its associated mime type and content hash field represent a permanent object or file that the token references. Both object and content hash values are permanent, and cannot be changed later. All other optional values, such as name, description, links, meta, preview, or mime type can be changed by the token creator.
+
+After you fill out your token details, submit the transaction. You will automatically receive the token supply to your wallet, which you can then distribute and transfer to others. Furthermore, if you visit the token page, you will see an associated swap pool that has been created automatically. To enable swaps, add liquidity by depositing CUBIC alongside some of your newly minted tokens.
+
+You might also want to set up some pools for your new token. What about a launch pool, to raise funds and distribute your token, while adding half of the raised funds to swap liquidity? Or a lending pool, to enable others to borrow your token in exchange for CUBIC. A lock pool would enable you to lock tokens, for yourself and for others. A lottery pool is a prize pool that you can use to create airdrop or promo campaigns and bring attention to your token. Finally, there is staking, which is a program that enables your token holders to commit tokens for a certain amount of time and receive rewards. Check out the videos for each pool program and good luck with your new token.
